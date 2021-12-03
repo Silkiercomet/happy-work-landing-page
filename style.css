@@ -6,7 +6,143 @@ html{
     box-sizing: inherit;
     margin: 0;
     padding: 0;
+    line-height: 1.5rem;
 }
 body{
     font-family: 'DM Sans', sans-serif;
 }
+
+/* navbar */
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 3.5rem;
+}
+.logo{
+    position: relative;
+}
+.logo::after{
+    content: url(images/Emoji.png);
+    position: absolute;
+    right: 25%;
+    top: 3px;
+}
+.navb__menu{
+    display: flex;
+    list-style: none;
+    column-gap: 2rem;
+}
+.navb__menu li{
+    font-size: 18px;
+    font-weight: 500;
+    color: #333333;
+}
+.navb__menu li:last-of-type{
+    color: #4856DF;
+}
+
+/* navbar */
+
+/* hero */
+
+.hero{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 2.5rem 3.5rem 0 3.5rem;
+}
+.right{
+    width: 100%;
+    height: 100%;
+
+}
+.right img{
+    border-bottom: 2px solid hsla(0, 0%, 0%,0.2);
+}
+.left > *{
+    color: #333333;
+}
+.left h1{
+    font-size: 4rem;
+    line-height: 4.688rem;
+    padding-right: 1rem;
+    position: relative;
+}
+.left h1::after{
+    content: "";
+    position: absolute;
+    height: 4px;
+    width: 40%;
+    background: #FFBE21;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+
+    bottom: 10px;
+    left: 85px;
+}
+.left p{
+    color: #333;
+    width: 30ch;
+    font-size: 18px;
+    padding: 1.5rem 0 4rem 0;
+}
+.btns{
+    display: flex;
+    align-items: center;
+    column-gap: 1.5rem;
+}
+.get{
+    border: none;
+    background-color: #4856DF;
+    color: #ebebeb;
+    padding: .8rem 2rem;
+    border-radius: 14px;
+}
+.get2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.get2{
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transform: translateY(12px);
+}
+.get2 a{
+    transform: translateY(-12px);
+}
+
+
+
+/* hero */
+
+/* grid */
+.grid{
+    background-color: #eef6fc;
+}
+.grid__group{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    padding:  3.5rem;
+    grid-gap: 20px;
+}
+.card{
+    background-color: #fff;
+    border-radius: 8px;
+}
+.card > *{
+    padding: 1rem 2rem;
+    color: #585858;
+}
+.card h2{
+    padding: 2rem 2rem 1rem 2rem;
+    color: #333333;
+    
+}
+.fas{
+    margin-right: .7rem;
+}
+
+/* grid */
